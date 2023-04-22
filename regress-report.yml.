@@ -1,0 +1,104 @@
+---
+test-cases:
+  - summary: |
+      Успешный поиск товара по ключевому слову
+      status: pass
+    
+      - summary: |
+       Успешный поиск товара по категории
+       status: pass
+    
+      - summary: |
+        Успешная фильтрация товаров в каталоге по цене
+        status: pass
+    
+      - summary: |
+        Успешная фильтрация товаров в каталоге по цене
+        status: fail
+    
+      - summary: |
+       Успешная фильтрация товаров в каталоге по размеру
+       status: fail
+    
+      - summary: |
+       Успешная фильтрация товаров в каталоге по размеру
+       status: fail
+    
+      - summary: |
+        Успешный просмотр подробной информации о товаре
+        status: pass
+  
+      - summary: |
+        Успешное добавление в корзину
+        status: pass
+
+      - summary: |
+        Успешный просмотр корзины
+        status: pass
+  
+      - summary: |
+        Успешное удаление товара из корзины
+        status: pass
+  
+      - summary: |
+        Успешное оформление заказа
+        status: fail
+  
+      - summary: |
+        Корректное отображение с мобильного устройства
+        status: pass
+
+      - summary: |
+        Корректное отображение Google chrome
+        status: pass
+ 
+      - summary: |
+        Корректное отображение Safari
+        status: pass
+ 
+      - summary: |
+        Корректное отображение Mozilla
+        status: pass
+ 
+      - summary: |
+        Корректное отображение Opera
+        status: pass
+
+bugreports:
+ 
+ - summary: |
+    Не работает фильтрация товаров в каталоге по цвету
+    environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 11
+    steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    expected-result: |
+    На странице есть функционал фильтрации товаров по цвету
+    actual-result: |
+    Данный функционал отсутствует
+ - summary: |
+    Не работает фильтрация товаров в каталоге по размеру
+    environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 11
+    steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    expected-result: |
+    На странице есть функционал фильтрации товаров по размеру
+    actual-result: |
+    Данный функционал отсутствует
+   
+    - summary: |
+     Не работает оформление заказа
+    environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 11
+    steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. перейти в корзину https://hexlet-products-store.vercel.app/cart
+    3. нажать на кнопку оформить заказ
+    expected-result: |
+    происходит перенаправление на страницу оплаты
+    actual-result: |
+    перенаправления на страницу оплаты отсутствует
