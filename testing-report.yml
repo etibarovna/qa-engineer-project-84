@@ -89,7 +89,7 @@
 
 - summary: |
     Корректное отображение Каталога товаров в браузере Safari
-  status: pass
+  status: fail
 
 - summary: |
     Корректное отображение страницы Товара в браузере Safari
@@ -97,11 +97,11 @@
   
 - summary: |
     Корректное отображение просмотра Корзины в браузере Safari
-  status: pass  
+  status: fail  
 
 - summary: |
     Корректное отображение оформления Заказа в браузере Safari
-  status: pass
+  status: fail
 
 - summary: |
     Корректное отображение Каталога товаров в браузере Opera
