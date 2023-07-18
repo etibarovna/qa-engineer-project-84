@@ -44,17 +44,17 @@
   status: fail
 
 - summary: |
-   Корректное отображение Google chrome
- status: pass
+    Корректное отображение Google chrome
+  status: fail
  
 - summary: |
    Корректное отображение Safari
- status: fail
+  status: fail
  
 - summary: |
    Корректное отображение Mozilla
- status: pass
+  status: pass
  
 - summary: |
    Корректное отображение Opera
- status: pass
+  status: pass
