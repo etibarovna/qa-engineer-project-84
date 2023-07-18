@@ -41,7 +41,7 @@
   
 - summary: |
     Корректное отображение с мобильного устройства
- status: fail
+  status: fail
 
 - summary: |
    Корректное отображение Google chrome
