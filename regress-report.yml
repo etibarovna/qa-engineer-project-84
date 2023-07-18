@@ -60,7 +60,7 @@ test-cases:
       Корректное отображение с мобильного устройства Каталога товаров
     status: pass
 
- - summary: |
+  - summary: |
      Корректное отображение с мобильного устройства страницы Товара
    status: pass
  
@@ -68,77 +68,77 @@ test-cases:
       Корректное отображение с мобильного устройства просмотра Корзины
     status: pass
 
-- summary: |
+  - summary: |
     Корректное отображение с мобильного устройства оформления Заказа
-  status: fail
+    status: fail
   
-- summary: |
+  - summary: |
     Корректное отображение Каталога товаров в браузере Google chrome
-  status: pass
+    status: pass
 
-- summary: |
+  - summary: |
     Корректное отображение страницы Товара в браузере Google chrome
-  status: pass
+    status: pass
   
-- summary: |
-    Корректное отображение просмотра Корзины в браузере Google chrome
-  status: pass  
+  - summary: |
+      Корректное отображение просмотра Корзины в браузере Google chrome
+    status: pass  
 
-- summary: |
-    Корректное отображение оформления Заказа в браузере Google chrome
-  status: pass
+  - summary: |
+      Корректное отображение оформления Заказа в браузере Google chrome
+    status: pass
 
-- summary: |
-    Корректное отображение Каталога товаров в браузере Safari
-  status: fail
+  - summary: |
+      Корректное отображение Каталога товаров в браузере Safari
+    status: fail
 
-- summary: |
-    Корректное отображение страницы Товара в браузере Safari
-  status: pass
+  - summary: |
+      Корректное отображение страницы Товара в браузере Safari
+    status: pass
+   
+  - summary: |
+      Корректное отображение просмотра Корзины в браузере Safari
+    status: fail  
+
+  - summary: |
+      Корректное отображение оформления Заказа в браузере Safari
+    status: fail
+
+  - summary: |
+      Корректное отображение Каталога товаров в браузере Opera
+    status: pass
+
+  - summary: |
+      Корректное отображение страницы Товара в браузере Opera
+    status: pass
   
-- summary: |
-    Корректное отображение просмотра Корзины в браузере Safari
-  status: fail  
+  - summary: |
+      Корректное отображение просмотра Корзины в браузере Opera
+    status: pass  
 
-- summary: |
-    Корректное отображение оформления Заказа в браузере Safari
-  status: fail
+  - summary: |
+      Корректное отображение оформления Заказа в браузере Opera
+    status: pass
 
-- summary: |
-    Корректное отображение Каталога товаров в браузере Opera
-  status: pass
+  - summary: |
+      Корректное отображение Каталога товаров в браузере Mozilla
+    status: pass
 
-- summary: |
-    Корректное отображение страницы Товара в браузере Opera
-  status: pass
+  - summary: |
+      Корректное отображение страницы Товара в браузере Mozilla
+    status: pass
   
-- summary: |
-    Корректное отображение просмотра Корзины в браузере Opera
-  status: pass  
+  - summary: |
+      Корректное отображение просмотра Корзины в браузере Mozilla
+    status: pass  
 
-- summary: |
-    Корректное отображение оформления Заказа в браузере Opera
-  status: pass
+  - summary: |
+      Корректное отображение оформления Заказа в браузере Mozilla
+    status: pass
 
-- summary: |
-    Корректное отображение Каталога товаров в браузере Mozilla
-  status: pass
-
-- summary: |
-    Корректное отображение страницы Товара в браузере Mozilla
-  status: pass
-  
-- summary: |
-    Корректное отображение просмотра Корзины в браузере Mozilla
-  status: pass  
-
-- summary: |
-    Корректное отображение оформления Заказа в браузере Mozilla
-  status: pass
-
-- summary: |
-    Успешная смена языка с английского на русский
-  status: fail
+  - summary: |
+      Успешная смена языка с английского на русский
+    status: fail
 
 bugreports:
  
