@@ -38,19 +38,35 @@
     перенаправления на страницу оплаты отсутствует
 
 - summary: |
-    Поля и текст в мобильной версии съехали 
+    Не работает переход по хештегу Товаров
   environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
   steps-to-reproduce: |
-    1. Зайти на страницу магазина с мобильного устройства https://hexlet-products-store.vercel.app/
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. перейти на страницу iPhone 9 Товара https://hexlet-products-store.vercel.app/products/1
+    3. нажать на хештег #smartphones
+  expected-result: |
+    происходит перенаправление на странцу с товарами по категории #smartphones
+  actual-result: |
+    перенаправления на страницу с товарами по категории #smartphones отсутствует
+
+- summary: |
+    Поля и текст на мобильном устройстве на странице Каталога товаров съехали
+  environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. открыть Devtools
+    3. изменить на моблильное устройство
   expected-result: |
     поля и яйчейки находится на своем месте
   actual-result: |
-    строка поиска съехала
+    строка поиска съехала, скрин 1 приложен 
     
 - summary: |
-    Поля и текст в Safari отображаются некорректно
+    Поля и текст в Safari отображаются некорректно на странице Каталога Товаров
   environment: |
     Safari
     ОС iOS
@@ -59,4 +75,28 @@
   expected-result: |
     поля и яйчейки находится на своем месте
   actual-result: |
-    строка поиска товара съехала
+    строка поиска товара съехала скрин 2 приложен
+
+- summary: |
+    Поля и текст в Safari отображаются некорректно на странице просмотра корзины
+  environment: |
+    Safari
+    ОС iOS
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/cart
+  expected-result: |
+    поля и яйчейки находится на своем месте
+  actual-result: |
+    строка поиска товара съехала скрин 3 приложен
+
+- summary: |
+    Поля и текст в Safari отображаются некорректно при оформлении заказа
+  environment: |
+    Safari
+    ОС iOS
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/cart
+  expected-result: |
+    поля и яйчейки находится на своем месте
+  actual-result: |
+    строка поиска товара съехала скрин 3 приложен
