@@ -166,80 +166,80 @@ bugreports:
    actual-result: |
     Данный функционал отсутствует
    
-- summary: |
+ - summary: |
      Не работает оформление заказа
-  environment: |
+   environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
     2. перейти в корзину https://hexlet-products-store.vercel.app/cart
     3. нажать на кнопку оформить заказ
-  expected-result: |
+   expected-result: |
     происходит перенаправление на страницу оплаты
-  actual-result: |
+   actual-result: |
     перенаправления на страницу оплаты отсутствует
 
-- summary: |
+ - summary: |
     Не работает переход по хештегу Товаров
-  environment: |
+   environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
     2. перейти на страницу iPhone 9 Товара https://hexlet-products-store.vercel.app/products/1
     3. нажать на хештег #smartphones
-  expected-result: |
+   expected-result: |
     происходит перенаправление на странцу с товарами по категории #smartphones
-  actual-result: |
+   actual-result: |
     перенаправления на страницу с товарами по категории #smartphones отсутствует
 
-- summary: |
+ - summary: |
     Поля и текст в Safari отображаются некорректно на странице Каталога Товаров
-  environment: |
+   environment: |
     Safari
     ОС iOS
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/
-  expected-result: |
+   expected-result: |
     поля и яйчейки находится на своем месте
-  actual-result: |
+   actual-result: |
     строка поиска товара съехала скрин 4 приложен
 
-- summary: |
+ - summary: |
     Поля и текст в Safari отображаются некорректно на странице просмотра корзины
-  environment: |
+   environment: |
     Safari
     ОС iOS
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/cart
-  expected-result: |
+   expected-result: |
     поля и яйчейки находится на своем месте
-  actual-result: |
+   actual-result: |
     строка поиска товара съехала скрин 3 приложен
 
-- summary: |
+ - summary: |
     Поля и текст в Safari отображаются некорректно при оформлении заказа
-  environment: |
+   environment: |
     Safari
     ОС iOS
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/cart
-  expected-result: |
+   expected-result: |
     поля и яйчейки находится на своем месте
-  actual-result: |
+   actual-result: |
     строка поиска товара съехала скрин 4 приложен
 
-- summary: |
+ - summary: |
     Не происхолит смена языка с английского на русский
-  environment: |
+   environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
     2. Нажимаем на хештег на кнопку Language
     3. выпадающего списка выбираем Russian
-  expected-result: |
+   expected-result: |
     Происходит переход на страницу каталога товаров со всей информацией на русском языке
-  actual-result: |
+   actual-result: |
     не все поля переведены на русский язык скрин 6 приложен
