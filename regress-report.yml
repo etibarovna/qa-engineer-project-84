@@ -144,37 +144,102 @@ bugreports:
  
  - summary: |
     Не работает фильтрация товаров в каталоге по цвету
-    environment: |
+   environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
-    steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
-    expected-result: |
+   expected-result: |
     На странице есть функционал фильтрации товаров по цвету
-    actual-result: |
+   actual-result: |
     Данный функционал отсутствует
+    
  - summary: |
     Не работает фильтрация товаров в каталоге по размеру
-    environment: |
+   environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
-    steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
-    expected-result: |
+   expected-result: |
     На странице есть функционал фильтрации товаров по размеру
-    actual-result: |
+   actual-result: |
     Данный функционал отсутствует
    
-    - summary: |
+- summary: |
      Не работает оформление заказа
-    environment: |
+  environment: |
     Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 11
-    steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
     2. перейти в корзину https://hexlet-products-store.vercel.app/cart
     3. нажать на кнопку оформить заказ
-    expected-result: |
+  expected-result: |
     происходит перенаправление на страницу оплаты
-    actual-result: |
+  actual-result: |
     перенаправления на страницу оплаты отсутствует
+
+- summary: |
+    Не работает переход по хештегу Товаров
+  environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. перейти на страницу iPhone 9 Товара https://hexlet-products-store.vercel.app/products/1
+    3. нажать на хештег #smartphones
+  expected-result: |
+    происходит перенаправление на странцу с товарами по категории #smartphones
+  actual-result: |
+    перенаправления на страницу с товарами по категории #smartphones отсутствует
+
+- summary: |
+    Поля и текст в Safari отображаются некорректно на странице Каталога Товаров
+  environment: |
+    Safari
+    ОС iOS
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/
+  expected-result: |
+    поля и яйчейки находится на своем месте
+  actual-result: |
+    строка поиска товара съехала скрин 4 приложен
+
+- summary: |
+    Поля и текст в Safari отображаются некорректно на странице просмотра корзины
+  environment: |
+    Safari
+    ОС iOS
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/cart
+  expected-result: |
+    поля и яйчейки находится на своем месте
+  actual-result: |
+    строка поиска товара съехала скрин 3 приложен
+
+- summary: |
+    Поля и текст в Safari отображаются некорректно при оформлении заказа
+  environment: |
+    Safari
+    ОС iOS
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина с браузера Safari https://hexlet-products-store.vercel.app/cart
+  expected-result: |
+    поля и яйчейки находится на своем месте
+  actual-result: |
+    строка поиска товара съехала скрин 4 приложен
+
+- summary: |
+    Не происхолит смена языка с английского на русский
+  environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. Нажимаем на хештег на кнопку Language
+    3. выпадающего списка выбираем Russian
+  expected-result: |
+    Происходит переход на страницу каталога товаров со всей информацией на русском языке
+  actual-result: |
+    не все поля переведены на русский язык скрин 6 приложен
